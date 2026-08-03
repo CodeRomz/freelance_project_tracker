@@ -28,13 +28,15 @@
                         <fileds name="name"/>
                     </h1>
                     <group>
-                        <fileds name="description"/>
-                        <fileds name="price"/>
-                        <group>
-                            <fileds name="client_id"/>
-                            <fileds name="freelancer_id"/>
-                        </group>
+                    <fileds name="description"/>
+                    <fileds name="price"/>
                     </group>
+
+                    <group>
+                        <fileds name="client_id"/>
+                        <fileds name="freelancer_id"/>
+                    </group>
+
 
                 </sheet>
             </form>
@@ -42,14 +44,14 @@
     </record>
 
 
-<!--    <record id="freelance_project_view_kanban" model="ir.ui.view">
-        <field name="name">freelance.project.kanban</field>
-        <field name="model">freelance.project</field>
-        <field name="arch" type="xml">
-            <kanban>
+    <!--    <record id="freelance_project_view_kanban" model="ir.ui.view">
+            <field name="name">freelance.project.kanban</field>
+            <field name="model">freelance.project</field>
+            <field name="arch" type="xml">
+                <kanban>
 
-            </kanban>
-        </field>
-    </record>-->
+                </kanban>
+            </field>
+        </record>-->
 
 </odoo>
