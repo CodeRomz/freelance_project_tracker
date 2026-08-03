@@ -54,6 +54,7 @@
                         <field name="description"/>
                         <field name="client_id"/>
                         <field name="price"/>
+                        <field name="category_id"/>
                     </t>
                 </template>
             </kanban>
