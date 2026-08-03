@@ -11,9 +11,6 @@
         <field name="arch" type="xml">
             <list>
                 <fileds name="name"/>
-                <fileds name="client_id"/>
-                <fileds name="price"/>
-                <fileds name="stat"/>
             </list>
         </field>
     </record>
