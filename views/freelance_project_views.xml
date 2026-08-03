@@ -10,7 +10,10 @@
         <field name="model">freelance.project</field>
         <field name="arch" type="xml">
             <list>
-               
+                <fileds name="name"/>
+                <fileds name="client_id"/>
+                <fileds name="price"/>
+                <fileds name="stat"/>
             </list>
         </field>
     </record>
@@ -21,21 +24,32 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
-                   
+                    <h1>
+                        <fileds name="name"/>
+                    </h1>
+                    <group>
+                        <fileds name="description"/>
+                        <fileds name="price"/>
+                        <group>
+                            <fileds name="client_id"/>
+                            <fileds name="freelancer_id"/>
+                        </group>
+                    </group>
+
                 </sheet>
             </form>
         </field>
     </record>
 
 
-    <record id="freelance_project_view_kanban" model="ir.ui.view">
+<!--    <record id="freelance_project_view_kanban" model="ir.ui.view">
         <field name="name">freelance.project.kanban</field>
         <field name="model">freelance.project</field>
         <field name="arch" type="xml">
             <kanban>
-               
+
             </kanban>
         </field>
-    </record>
+    </record>-->
 
 </odoo>
