@@ -22,6 +22,8 @@
         <field name="arch" type="xml">
             <form>
                 <header>
+                    <button name = "claim_project" type="object" string="Claim Project" invisible="state in ('progress', 'completed')"/>
+                    <button name = "complete_project" type="object" string="Complete Project" invisible="state in ('open', 'completed')"/>
                     <field name = "state" widget="statusbar"/>
                 </header>
                 <sheet>
