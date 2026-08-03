@@ -1,7 +1,7 @@
 {
     'name': "Freelance Project Tracker",
 
-    'depends': ['base'],
+    'depends': ['base', 'project'],
 
     'application': True,
 
