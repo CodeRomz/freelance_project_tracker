@@ -9,7 +9,7 @@ class FreelanceProject(models.Model):
     name = fields.Char(string='Project Name', required=True)
     description = fields.Text(string='Description')
     price = fields.Float(string='Price')
-    state = fields.Selection([('open', 'Open'), ("progress, Inprogress"), ("completed", "Completed")], default='open')
+    state = fields.Selection([('open', 'Open'), ("progress", "Inprogress"), ("completed", "Completed")], default='open')
     client_id = fields.Many2one("res.partner", string='Client ID')
     freelancer_id = fields.Many2one("res.partner", string='Freelancer')
 
