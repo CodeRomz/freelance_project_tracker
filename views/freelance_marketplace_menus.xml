@@ -1,13 +1,15 @@
 <odoo>
 
     <menuitem id="freelance_market_menu_root" name="Freelance Marketplace">
-
-        <menuitem id="freelance_market_first_level_menu" name="Freelance Projects"
-                  action="freelance_project_action">
+        <menuitem
+                id="freelance_market_first_level_menu"
+                name="Freelance Projects"
+                action="freelance_project_action">
         </menuitem>
-
-        <menuitem id="freelance_market_second_level_menu" name="Configurations">
-            <menuitem id="freelance_market_category_submenu" name="Project Categories" action="project_category_action">
+        <menuitem id="freelance_market_second_level_menu"  name="Configurations">
+            <menuitem id="freelance_market_category_submenu"
+                      name="Project Categories"
+                      action="project_category_action">
             </menuitem>
         </menuitem>
     </menuitem>
