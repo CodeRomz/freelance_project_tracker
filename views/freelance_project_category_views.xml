@@ -16,7 +16,7 @@
         <field name="model">project.category</field>
         <field name="arch" type="xml">
             <list string="Project Categories">
-               <field name="name"/>
+                <field name="name"/>
             </list>
         </field>
     </record>
