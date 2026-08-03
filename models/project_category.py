@@ -6,4 +6,4 @@ class ProjectCategory(models.Model):
 
     name = fields.Char(string='Name', required=True)
 
-    _check_unique_name = models.constraint("UNIQUE(name)", "The project category is unique")
+    _check_unique_name = model.constraint("UNIQUE(name)", "The project category is unique")
