@@ -12,4 +12,5 @@ class FreelanceProject(models.Model):
     state = fields.Selection([('open', 'Open'), ("progress", "In-progress"), ("completed", "Completed")], default='open')
     client_id = fields.Many2one("res.partner", string='Client ID')
     freelancer_id = fields.Many2one("res.partner", string='Freelancer')
+    category_id = fields.Many2one('project.category', string='Category')
 

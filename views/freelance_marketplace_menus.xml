@@ -1,5 +1,4 @@
 <odoo>
-
     <menuitem id="freelance_market_menu_root" name="Freelance Marketplace">
         <menuitem
                 id="freelance_market_first_level_menu"
