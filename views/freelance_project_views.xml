@@ -21,8 +21,10 @@
         <field name="model">freelance.project</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <field name = "state" widget="statusbar"/>
+                </header>
                 <sheet>
-
                     <h1>
                         <field name="name"/>
                     </h1>
