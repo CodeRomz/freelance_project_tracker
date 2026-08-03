@@ -7,6 +7,9 @@
         <field name="arch" type="xml">
             <list>
                 <field name="name"/>
+                <field name="client_id"/>
+                <field name="price"/>
+                <field name="state"/>
             </list>
         </field>
     </record>
