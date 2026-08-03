@@ -5,7 +5,7 @@
         <field name="arch" type="xml">
             <form string="Project Categories">
                 <sheet>
-
+                    <field name="name"/>
                 </sheet>
             </form>
         </field>
@@ -16,7 +16,7 @@
         <field name="model">project.category</field>
         <field name="arch" type="xml">
             <list string="Project Categories">
-               
+               <field name="name"/>
             </list>
         </field>
     </record>
