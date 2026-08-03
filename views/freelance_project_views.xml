@@ -10,6 +10,7 @@
                 <field name="client_id"/>
                 <field name="price"/>
                 <field name="state"/>
+                <field name="category_id"/>
             </list>
         </field>
     </record>
@@ -34,6 +35,7 @@
                     <group>
                         <field name="client_id"/>
                         <field name="freelancer_id"/>
+                        <field name="category_id"/>
                     </group>
 
                 </sheet>
