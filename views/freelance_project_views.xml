@@ -2,7 +2,7 @@
     <record id="freelance_project_action" model="ir.actions.act_window">
         <field name="name">Freelance Projects</field>
         <field name="res_model">freelance.project</field>
-        <field name="view_mode">list,form,kanban</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <record id="freelance_project_view_list" model="ir.ui.view">
