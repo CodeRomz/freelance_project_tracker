@@ -40,3 +40,14 @@ class FreelanceProject(models.Model):
                 raise UserError(_('Please assign this project to a freelancer'))
             else:
                 record.state = 'completed'
+
+    def action_view_project(self):
+        self.ensure_one()
+        return {
+            'type': 'ir.actions.act_window',
+            'name': _('Project'),
+            'res_model': 'project.project',
+            'view_mode': 'form',
+            'res_id': self.project_id.id,
+            'target': 'current',
+        }

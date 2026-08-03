@@ -22,11 +22,19 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-                    <button name = "claim_project" type="object" string="Claim Project" invisible="state in ('progress', 'completed')"/>
-                    <button name = "complete_project" type="object" string="Complete Project" invisible="state in ('open', 'completed')"/>
-                    <field name = "state" widget="statusbar"/>
+                    <button name="claim_project" type="object" string="Claim Project"
+                            invisible="state in ('progress', 'completed')"/>
+                    <button name="complete_project" type="object" string="Complete Project"
+                            invisible="state in ('open', 'completed')"/>
+                    <field name="state" widget="statusbar"/>
                 </header>
                 <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_project" type="object" class="oe_stat_button" icon="fa-folder"
+                                invisible="not project_id">
+                            <filed name="project_id" widget="statinfo" string="Project"/>
+                        </button>
+                    </div>
                     <h1>
                         <field name="name"/>
                     </h1>
@@ -51,7 +59,7 @@
         <field name="name">freelance.project.kanban</field>
         <field name="model">freelance.project</field>
         <field name="arch" type="xml">
-            <kanban default_group_by = "category_id">
+            <kanban default_group_by="category_id">
                 <template>
                     <t t-name="card">
                         <field name="name"/>
