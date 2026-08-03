@@ -49,7 +49,7 @@
                 <template>
                     <t t-name="card">
                         <field name="name"/>
-                        <field name="descrtiption"/>
+                        <field name="description"/>
                         <field name="client_id"/>
                         <field name="price"/>
                     </t>
